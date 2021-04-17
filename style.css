@@ -7,9 +7,9 @@ body {
 
 header {
     background-image: url(Obrazky/happy-traveler.svg);
-    height: 290.5px;
+    /* height: 290.5px; */
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: center;
 }
 
@@ -84,4 +84,65 @@ button {
 
 img {
     margin-right: 30px;
+}
+
+@media screen and (min-width: 640px) {
+    header {
+        /* height: 332px; */
+    }
+
+    .tlacitka {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pohoda {
+        margin: 0;
+    }
+
+    .dobrodruzstvi {
+        margin: 0 20px 0 0;
+    }
+
+    p {
+        margin-top: 42px;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        margin-top: 80px;
+    }
+
+    .sluzby {
+        margin: 17px 0 40px 0;
+    }
+
+    .kontejner2 {
+        display: flex;
+    }
+
+    .kontejner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 45px;
+        margin-right: 0;
+    }
+    
+    .vlevo,
+    .uprostred {
+        margin-right: 20px;
+    }
+
+    .kaktus {
+        width: 40px;
+    }
+
+    .palma,
+    .slunecnik,
+    .karavan {
+        width: 50px;
+    }
 }
