@@ -1,0 +1,87 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    margin: 60px 20px;
+    background-color: #FAFAFA;
+}
+
+header {
+    background-image: url(Obrazky/happy-traveler.svg);
+    height: 290.5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+    margin: 40px 0;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+    margin-top: 60px;
+}
+h1::after {
+    content:"";
+    background-color: #407BFF;
+    width: 80px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    margin: 10px;
+    
+}
+
+p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #8B8B8B;
+    text-align: center;
+    line-height: 1.5;
+}
+
+button {
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 14px;
+    border: none;
+    display: block;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+.dobrodruzstvi {
+    background-color: #407BFF;
+    margin-top: 40px;
+}
+
+.pohoda {
+    background-color: #8B8B8B;
+}
+
+.sluzby {
+    margin-bottom: 30px;
+}
+
+.kontejner {
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: #407BFF1F 0px 4px 6px;;
+    padding: 30px 20px 20px 20px;
+}
+
+img {
+    margin-right: 30px;
+}
