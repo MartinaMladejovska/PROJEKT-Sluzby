@@ -1,3 +1,6 @@
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
 body {
     font-family: 'Montserrat', sans-serif;
     position: relative;
@@ -5,12 +8,10 @@ body {
     background-color: #FAFAFA;
 }
 
-header {
-    background-image: url(Obrazky/happy-traveler.svg);
-    /* height: 290.5px; */
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
+.cestovatel {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
@@ -28,6 +29,7 @@ h2 {
     text-align: center;
     margin-top: 60px;
 }
+
 h1::after {
     content:"";
     background-color: #407BFF;
@@ -35,8 +37,8 @@ h1::after {
     height: 2px;
     display: block;
     position: absolute;
-    margin: 10px;
-    
+    margin-top: 10px;
+    margin-left: 40%;
 }
 
 p {
@@ -87,9 +89,6 @@ img {
 }
 
 @media screen and (min-width: 640px) {
-    header {
-        /* height: 332px; */
-    }
 
     .tlacitka {
         display: flex;
@@ -117,7 +116,8 @@ img {
         margin: 17px 0 40px 0;
     }
 
-    .kontejner2 {
+    .horni,
+    .spodni {
         display: flex;
     }
 
@@ -145,4 +145,93 @@ img {
     .karavan {
         width: 50px;
     }
+}
+
+@media screen and (min-width: 1100px) {
+
+body {
+    margin: 60px 80px;
+}
+header {
+    display: grid;
+    grid-template-columns: 490px 60px 490px;
+    grid-auto-flow: dense;
+}
+
+.cestovatel {
+    grid-column: 3 / 4;
+    max-width: 425px;
+    
+}
+
+.travels {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ h1 {
+     text-align: left;
+ }
+
+ p {
+     text-align: left;
+     margin-top: 0;
+ }
+ h1::after {
+     margin-left: 0;
+ } 
+
+.tlacitka {
+    justify-content: start;
+}
+
+.prostredni {
+    display: grid;
+    grid-template-columns: 550px 60px 430px;
+    margin: 80px 0;
+    align-items: center;
+}
+
+.horni {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.popis {
+    grid-column: 3 / 4;
+}
+
+h2 {
+    text-align: left;
+    margin-top: 0;
+}
+
+.sluzby {
+    margin: 0;
+}
+
+img {
+    margin-bottom: 20px;
+}
+
+.kontejner {
+    padding: 40px 15px;
+}
+
+.posledni {
+    display: grid;
+    grid-template-columns: 430px 60px 550px;
+    align-items: center;
+}
+
+.popis2 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.spodni {
+    grid-column: 3 / 4;
+}
+
+
 }
